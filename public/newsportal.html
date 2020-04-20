@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+    <head>
+        <title>News Portal</title>
+        <script type="text/javascript"> 
+            function display_c(){
+            var refresh=1000; // Refresh rate in milli seconds
+            mytime=setTimeout('display_ct()',refresh)
+            }
+            
+            function display_ct() {
+                var x = new Date()
+var x1=x.toUTCString();// changing the display to UTC string
+document.getElementById('ct').innerHTML = x1;
+tt=display_c();
+             }
+            </script>
+        <style type = "text/css">
+        
+        body{
+
+            margin:0;
+
+
+        }
+        #topbar{
+        background-color:maroon;
+        width:100%;
+        height:75px;
+        }
+
+        .fixedwidth{
+            width:1250px;
+            margin:0 auto;
+            
+        }
+        #logodiv{
+
+            padding-top:5px;
+            width:1px;
+            height:1px;
+            float:left;
+            border-right:1px solid green;
+            padding-right:10px;
+        }
+
+        #signindiv img {
+
+            font-weight:bold;
+            padding:10px 80px 12px 200px;
+            border-right:1px solid maroon;
+            width:70px;
+            height:55px;
+            float:left;
+            border-right:1px solid green;
+
+        }
+
+        #topmenudiv{
+            float:left;
+            color:white;
+        }
+
+        #topmenudiv ul{
+            margin-top:10px;
+            padding:0px;
+        }
+        #topmenudiv li{
+            list-style:none;
+            font-weight:bold;
+            font-size:2em;
+            border-right:1px solid #990000;
+            height:100%;
+            padding:10px 20px 12px 20px;
+            float:left;        
+            }
+
+            #searchdiv{
+
+                float:left;
+                padding:8px;
+            }
+
+            .break{
+                clear:both;
+            }
+
+            #newsbar{
+            background-color:rgb(150, 80, 80);
+            width:100%;
+            height:90px;
+            color:white;
+            }
+
+            #newsbar p {
+                margin:0;
+                padding:0;
+                padding-top:10px;
+                padding-left:10px;
+
+            }
+
+            #newsheader {
+                font-size:3em;
+
+                
+                
+            }    
+
+            #india{
+                font-size:0.7em;
+                padding-left:10px;
+
+            }
+
+            #topicmenu ul{
+                background-color:rgb(41, 29, 27);
+                padding:5px 0 0 5px;;
+                margin:0;
+                height:20px;
+            }
+
+            #topicmenu li{
+                list-style:none;
+                font-size:0.9em;
+                border-right:1px solid #990000;
+                padding: 0 10px 0 10px;
+                height:100%;
+                float:left;
+            }
+
+            #content{
+        
+            width:100%;
+            color:rgb(65, 65, 65);
+            font-size:0.9em;
+            }
+
+            .date{
+                font-weight:bold;
+            }
+            h1{
+                color:rgba(47, 46, 48, 0.39);
+                font-size:2.5em;
+            }
+
+            .headimage{
+                float:left;
+            }
+            
+            .newsitem{
+                position:relative;
+                left:10px;
+                top:2px;
+                width:250px;
+                float:left;
+                font-size:1.3em;
+            }
+            newsitem a {
+                color:#0c0b11;
+                text-decoration:none;
+
+            }
+
+            .newsitem a:hover{
+                text-decoration: underline;
+            }
+
+          #watch{
+              background-color:rgb(234, 238, 238);
+              float:right;
+              height:240px;
+              width:360px;
+              position:relative;
+              top:-80px;
+              
+          }
+          h2{
+              color:#5c5c5c;
+              margin:10px 0 10px 10px;
+              font-size:1.8em;
+          }
+          .leftarrow{
+              padding:20px;
+              padding-right:20px;
+              
+          }
+      
+        </style>
+    </head>
+
+    <body onload=display_ct();>
+        <div id = "container">
+            <div id = "topbar">
+                <div class = "fixedwidth">
+
+                <div id = "logodiv">
+                    <img src = "E:\6THSEM\WEB TECH LAB\news\BBC.jpg"/>
+
+
+                </div>
+
+                <div id ="signindiv">
+
+                <img src ="E:\6THSEM\WEB TECH LAB\news\signup.jpg"/> 
+                </div>
+
+                <div id = "topmenudiv">
+                    <ul>
+                        
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="sports.html">Sports</a></li>
+                        <li><a href="weather.html">Weather</a></li>
+                        <li><a href="More.html">More</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class = "break"></div>
+
+                <div id = "newsbar">
+                    <div class = "fixedwidth">
+                        <p id="newsheader">NEWS<span id="india">INDIA</span></p><a href="news.html"></a>
+
+                        <div class = "break"></div>
+
+                        <div id="topicmenu">
+                            <ul>
+                                <li>Home</li>
+                                <li><a href="world.html">World</a></li>
+                                <li><a href="india.html">India</a></li>
+                                <li><a href="business.html">Business</a></li>
+                                
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class = "break"></div>
+                <div id ="content">
+                    <div class="fixedwidth">
+                      <p><b><span id='ct' ></span></b></p>  
+
+                        <!-- <p><span class="date">20 April 2020</span> Last updated at 23:56</p> -->
+                        <h1>Pollution spreading rapidly</h1>
+
+                        <img class="headimage" src ="E:\6THSEM\WEB TECH LAB\news\poll.jpg"/>
+                        <div class ="newsitem">
+                            <p>Pollution is the introduction of contaminants into the natural environment that cause adverse change. Pollution can take the form of chemical substances or energy, such as noise, heat or light.</p>
+                            
+                            <p> <a href="">Why are pollution levels so high?</a></p>
+                            <p> <a href="">How can we help?</a></p>
+             <!-- <img class="headimage" src ="E:\6THSEM\WEB TECH LAB\Markdown-Blog-master\public\crime.png" onmouseover="this.src='E:\6THSEM\WEB TECH LAB\Markdown-Blog-master\public\crime.png';" onmouseout="this.src='E:\6THSEM\WEB TECH LAB\Markdown-Blog-master\public\crime.png';/> -->
+                <img src="E:\6THSEM\WEB TECH LAB\Markdown-Blog-master\public\crime.png" alt="crime" width="500px" height="400px" align:"left">
+              
+                        </div>
+                       <div id="watch">
+                           <h2>Watch/Listen</h2>
+                           <img src ="E:\6THSEM\WEB TECH LAB\news\vid.png" class  = "leftarrow"/>
+                           <div id="watch1">
+                        <img src ="E:\6THSEM\WEB TECH LAB\news\watnews.png" class  = "leftarrow"/> 
+                           <div class="wlblock">
+                            <ul>
+                                <li><a href="">BBC News</a></li>
+                                <li><a href="">Radio Channel</a></li>
+                                
+                            </ul>
+                            
+                           </div>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+
+                
+
+
+            </div>
+
+
+
+
+        
+    </body>
+</html>
